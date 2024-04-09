@@ -1,0 +1,44 @@
+Sum the number which is given in a string
+
+    s=input("Enter a string = ")
+1. Taking String input from the user and stored in s variable.
+
+ Sum = 0
+2. By assuming if the user given substring as empty string and if the given string does not contain digits,
+ then we are assigning count variable with 0.
+
+for i in s:
+3. starting a for loop to iterate the elements present in the string(s) by using i variable,
+if the user given string is not empty controller will enter into the loop.
+     if i.isdigit():
+4. After enter into the for loop, it will check the if condition, that is if i (element) is digit,
+it will enter into the if block and perform a statement to convert that str to int and next statement Sum+=1 by this we can add the count value.
+if condition is false then there is no else so controller will perform next iteration.
+
+ if i.isdigit():
+        n = int(i)
+        sum += n
+        
+5.in a loop we are incrementing the sum variable by the iteration count.
+
+* assume if user given string is 'ven123'
+- 1st itteeration i will be assigned as first element in str as v and check the condition i is digit (false)
+ then that it will perform next iteration sum = 0
+- 1st itteeration i will be assigned as first element in str as e and check the condition i is digit (false)
+ then that it will perform next iteration sum = 0
+- 1st itteeration i will be assigned as first element in str as n and check the condition i is digit (false)
+ then that it will perform next iteration sum = 0
+- 1st itteeration i will be assigned as first element in str as '1' and check the condition i is digit (true)
+ then int in str will be type casted to int and stored in variable(n) and will be updated sum = sum+n the value = 1 
+- 1st itteeration i will be assigned as first element in str as '2' and check the condition i is digit (true)
+then int in str will be type casted to int and stored in variable(n) and will be updated sum = sum+n the value = 3
+- 1st itteeration i will be assigned as first element in str as '3' and check the condition i is digit (true)
+then int in str will be type casted to int and stored in variable(n) and will be updated sum = sum+n the value = 6
+
+7.After all the elements will be done then it will come out of the for loop and go to next statement.
+
+    print(sum)
+8. This print sum will be return outside the loop because count value will be returned at the end onces only,
+if we will given inside the loop then it will print every time or every iteration, to avoid that we need to given that statemnet outside the loop.
+
+9. by this we can find sum of numbers present in the given string...

@@ -1,0 +1,33 @@
+Count no of special chars present in a given string 
+
+    s=input("Enter a string = ")
+1. Taking String input from the user and stored in s variable.
+    count = 0
+2. By assuming if the user given substring as empty string and if the given string does not contain special chars,
+ then we are assigning count variable with 0.
+
+for i in s:
+3. starting a for loop to iterate the elements present in the string(s) by using i variable,
+if the user given string is not empty controller will enter into the loop.
+     if i.isdigit():
+4. After enter into the for loop, it will check the if condition, that is if i (element) isalnum(),
+it will enter into the if block and perform a statement count+=1 by this we can increse the count value.
+if condition is false then there is no else so controller will perform next iteration.
+
+5.in a loop we are incrementing the count variable by the iteration count.
+
+* assume if user given string is 'ven 23'
+- 1st itteeration i will be assigned as first element in str as v and check the condition i is isalnum() (false) then count will be remain same 0 
+- 1st itteeration i will be assigned as first element in str as e and check the condition i is isalnum() (false) then count will be remain same 0
+- 1st itteeration i will be assigned as first element in str as n and check the condition i is isalnum() (false) then count will be remain same 0
+- 1st itteeration i will be assigned as first element in str as ' ' and check the condition i is isalnum() (true) then count will be updated to 1 
+- 1st itteeration i will be assigned as first element in str as '2' and check the condition i is isalnum() (false) then count will be remain same 1
+- 1st itteeration i will be assigned as first element in str as '3' and check the condition i is isalnum() (false) then count will be remain same 1.
+
+7.After all the elements will be done then it will come out of the for loop and go to next statement.
+
+    print(count)
+8. This print count will be return outside the loop because count value will be returned at the end onces only,
+if we will given inside the loop then it will print every time or every iteration, to avoid that we need to given that statemnet outside the loop.
+
+9. by this we can find count of special chars present in the given string...

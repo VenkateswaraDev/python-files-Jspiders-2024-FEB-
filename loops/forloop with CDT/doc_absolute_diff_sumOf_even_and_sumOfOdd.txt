@@ -1,0 +1,49 @@
+absolute difference between Sum of even numbers and sum of odd numbers in a given string
+
+    s=input("Enter a string = ")
+1. Taking String input from the user and stored in s variable.
+
+ esum = 0
+ osum = 0
+2. By assuming if the user given substring as empty string and if the given string does not contain digits,and if no even digit present in the string
+ then we are assigning count variable with 0.
+
+for i in s:
+3. starting a for loop to iterate the elements present in the string(s) by using i variable,
+if the user given string is not empty controller will enter into the loop.
+     if i.isdigit():
+4. After enter into the for loop, it will check the if condition, that is if i (element) is digit,
+it will enter into the if block and perform a statement to convert that str to int and 
+again if condition to check that number is even or not if even enter into if block,
+and perform eSum+=n by this we can add the sum value.
+if condition is false then controller enter into else block and update osum+=n.
+
+ if i.isdigit():
+        n = int(i)
+        if n%2==0:
+            esum += n
+        else:
+            osum += n
+        
+5.in a loop we are incrementing the sum variable by the iteration count.
+
+* assume if user given string is 'v124'
+- 1st itteeration i will be assigned as first element in str as v and check the condition i is digit (false)
+ then that it will perform next iteration.
+- 2nd itteeration i will be assigned as first element in str as '1' and check the condition i is digit (true)
+ then int in str will be type casted to int and stored in variable(n) and will be 
+ checked whether it gives reminder when it is divisible by 2 if false  and enter into else block and update osum =1. 
+- 3rd itteeration i will be assigned as first element in str as '2' and check the condition i is digit (true)
+ then int in str will be type casted to int and stored in variable(n) and will be 
+ checked whether it gives reminder when it is divisible by 2 if true  esum value is 0+2=2. 
+- 4th itteeration i will be assigned as first element in str as '4' and check the condition i is digit (true)
+ then int in str will be type casted to int and stored in variable(n) and will be 
+ checked whether it gives reminder when it is divisible by 2 if true  sum value is 2+4=6.
+7.After all the elements will be done then it will come out of the for loop and go to next statement.
+
+    print(abs(esum-osum))
+8. This print(abs(esum-osum)) will be return outside the loop because count value will be returned at the end onces only,
+if we will given inside the loop then it will print every time or every iteration, to avoid that we need to given that statemnet outside the loop.
+and abs function will give the output in positive int even the actual result is negative.
+
+9. by this we can find absolute difference between sum of even numbers and present in the given string...

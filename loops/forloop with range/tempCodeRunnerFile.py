@@ -1,0 +1,1 @@
+num = int(input("Enter a number to print natural number upto = "))

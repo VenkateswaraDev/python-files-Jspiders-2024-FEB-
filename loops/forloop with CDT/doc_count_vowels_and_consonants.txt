@@ -1,0 +1,35 @@
+Count no of consonents and vowels present in a given string 
+
+    s=input("Enter a string = ")
+1. Taking String input from the user and stored in s variable.
+    vow = 'aeiouAEIOU'
+2. To compairison we are stored consonents(aeiouAEIOU) in variable vow (in both uppercase and lowercase).
+    c_count = 0
+    v_count = 0 
+3. count variable will be initilized with zero because by assuming if user give empty string then the count of the consonents will be zero,
+    in another case if given string does not have any consonents and does not have vowels then also we need to return zero.
+    for i in s:
+4. starting a for loop to iterate the elements present in the string(s) by using i variable,
+if the user given string is not empty controller will enter into the loop.
+     if i in vow:
+5. After enter into the for loop, it will check the if condition, that is if i.isalpha() (i element is containing alphabet or not)  and not present in vow(variable)
+if the condition is true it will enter into the if block and perform a statement count+=1 by this we can increse the count value.
+if condition is false then else part will be executed and v_count will be updated.
+
+6. in a loop we are incrementing the count variable by the iteration count.
+
+* assume if user given string is 'venky'
+- 1st itteeration i will be assigned as first element in str as v and check the condition i is alpha and i not in vow (true) then c_count will be updated to 1
+- 1st itteeration i will be assigned as first element in str as e and check the condition i is alpha and i not in vow (false) then v_count will be updated to 1
+- 1st itteeration i will be assigned as first element in str as n and check the condition i is alpha and i not in vow (true) then count will be updated to 2
+- 1st itteeration i will be assigned as first element in str as k and check the condition i is alpha and i not in vow (true) then count will be updated to 3 
+- 1st itteeration i will be assigned as first element in str as y and check the condition i is alpha and i not in vow (true) then count will be updated to 4.
+
+7.After all the elements will be done then it will come out of the for loop and go to next statement.
+
+    print(c_count)  ## output :- 4
+    print(v_count)  ## output :- 1
+8. This print count will be return outside the loop because count value will be returned at the end onces only,
+if we will given inside the loop then it will print every time or every iteration, to avoid that we need to given that statemnet outside the loop.
+
+9. by this we can find count of consonents and vowels present in the given string...

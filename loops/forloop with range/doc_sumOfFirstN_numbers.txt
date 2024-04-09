@@ -1,0 +1,23 @@
+To find the sum of the first N natural numbers
+
+1. Take input from the user to know the N value
+num = int(input("Enter a number to print natural number upto = "))
+
+2. nsum = 0
+BY assuming is the user given N number as 0 then we need to return 0
+
+3. starting a for loop in the range of 1 to N+1 (N is user given number)
+for every iteration the sum value will be updated by the below statement
+nsum +=i
+
+Asumme if the user given N value as 5 
+
+for loop range will in between 1 to 6
+
+- 1st iteration i value will be 1 and nsum will become = 1
+- 2nd iteration i value will be 2 and nsum will become = 3
+- 3rd iteration i value will be 3 and nsum will become = 6
+- 4th iteration i value will be 4 and nsum will become = 10
+- 5th iteration i value will be 5 and nsum will become = 15
+
+4. outside loop we need to print that nsum value .

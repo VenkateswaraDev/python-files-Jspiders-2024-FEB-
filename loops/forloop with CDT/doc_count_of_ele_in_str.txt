@@ -1,0 +1,27 @@
+Explaination doc to check how many elements present in given str
+
+    s=input("Enter a string = ")
+1.Taking input string from the user and stored in the variable called s.
+    count=0
+2. initilized a variable named count to track the count of elements,
+  0 is assign because if user given string is empty then it will return 0.
+    for i in s:
+3. starting a for loop to iterate the elements present in the string(s) by using i variable,
+if the user given string is not empty controller will enter into the loop.
+    count +=1
+4. in a loop we are incrementing the count variable by the iteration count.
+
+* assume if user given string is 'venky'
+- 1st itteeration i will be assigned as first element in str as v and count will be updated to 1 
+- 1st itteeration i will be assigned as first element in str as e and count will be updated to 1+1 
+- 1st itteeration i will be assigned as first element in str as n and count will be updated to 2+1 
+- 1st itteeration i will be assigned as first element in str as k and count will be updated to 3+1 
+- 1st itteeration i will be assigned as first element in str as y and count will be updated to 4+1
+
+After all the elements will be done then it will come out of the for loop and go to next statement.
+
+    print(count)
+5. This print count will be return outside the loop because count value will be returned at the end onces only,
+if we will given inside the loop then it will print every time or every iteration, to avoid that we need to given that statemnet outside the loop.
+
+6. by this we can find number of elements present in the given string...

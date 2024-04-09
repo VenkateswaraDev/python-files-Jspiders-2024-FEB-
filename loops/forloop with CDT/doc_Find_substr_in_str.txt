@@ -1,0 +1,33 @@
+Find the number of substr present in the given string.
+    s = input("Enter a string= ")
+    sub = input("Enter a sub string = ")
+
+1. Taking input string from the user and storing it into the s variable.
+2. Taking the substring from the user by using input menthod and stored in the sub variable.
+    count = 0
+3. By assuming if the user given substring as empty string we are assigning count variable with 0.
+    for i in s:
+4. Taking for loop with collection data type to extract each and every element in the given string and assign to the i variable.
+     if i==sub:
+        count +=1
+5. If the substring is not empty then the controller will enter into loop,
+inside loop if contion will be given to check wheather given substring is present in the given string by accessing each and every element.
+6. If the if condition is True then it will enter into if block and count will be incremented, if the if condition gives False then it will not update the count value.
+
+ assume if user given string is 'prasanna'
+- 1st itteeration i will be assigned as first element in str as 'p' and count will be updated to 1 
+- 1st itteeration i will be assigned as first element in str as 'r' and count will be updated to 1+1 
+- 1st itteeration i will be assigned as first element in str as 'a' and count will be updated to 2+1 
+- 1st itteeration i will be assigned as first element in str as 's' and count will be updated to 3+1 
+- 1st itteeration i will be assigned as first element in str as 'a' and count will be updated to 4+1
+- 1st itteeration i will be assigned as first element in str as 'n' and count will be updated to 5+1
+- 1st itteeration i will be assigned as first element in str as 'n' and count will be updated to 6+1
+- 1st itteeration i will be assigned as first element in str as 'a' and count will be updated to 7+1
+
+After all the elements will be done then it will come out of the for loop and go to next statement.
+
+    print(count)
+7. This print count will be return outside the loop because count value will be returned at the end onces only,
+if we will given inside the loop then it will print every time or every iteration, to avoid that we need to given that statemnet outside the loop.
+
+8. By this we can find count of substring present in the given string....
