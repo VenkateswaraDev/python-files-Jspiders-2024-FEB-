@@ -1,0 +1,19 @@
+To find the factorial of a given number 
+
+1. Taking int number from the user to find the factorial of that number and stored in a variable num.
+num = int(input("Enter a number to find its factorial = "))
+
+2. Assuming is the user given input as 0 then factorial will be 1 so iam intilizing fact with 1
+fact = 1
+
+3. starting a forloop with range of 1 to num+1
+and multiply each i value with fact variable at last complition of for loop we can find factorial.
+fact *=i
+Assume if the user given 5 as a num
+-- 1st iteration i will be 1 and update fact variable with (fact = fact * i) fact = 1 * 1 = 1
+-- 2nd iteration i will be 2 and update fact variable with (fact = fact * i) fact = 1 * 2 = 2
+-- 3rd iteration i will be 3 and update fact variable with (fact = fact * i) fact = 2 * 3 = 6
+-- 4th iteration i will be 4 and update fact variable with (fact = fact * i) fact = 6 * 4 = 24
+-- 5th iteration i will be 5 and update fact variable with (fact = fact * i) fact = 24 * 5 = 120
+
+4.outside the loop we need to print the factorial of the given number 
