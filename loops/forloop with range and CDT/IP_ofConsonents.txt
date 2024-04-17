@@ -1,0 +1,27 @@
+to print the index positions of consonents present in the given string
+
+1.Take input String from the user and store it in the variable s
+2. store all Vowels in a variable v to compair with the given str s
+3.We need to find index positions of consonents so we are considering for loop with the range and CDT
+4. in that for loop the range will be upto the length of the collection
+5. for loop will start with 0 which is assign to a variable called ip to track range 
+6. inside for loop there is a condition
+ if (s[ip].isalpha and s[ip] not in v ) we are checking if the given String char is alpha or not and that char is present in the v variable or not if yes then the ip will be print.
+7. for example take s = 'venky' and v = 'AEIOUaeiou'
+-- in the first iteration the ip will be assign with 0 and enter into the loop and in the loop 
+    there is condition s[ip] means it will extract 'v' and it is alpha and so 'v' is not present in v variable
+    then enter into if block print the index position ip.
+-- in the 2nd iteration ip will become 1 and check the condition s[ip] that means 'e' is alpha and
+    so 'e' is present in the variable v,so if condition false.
+-- in the 3rd iteration the ip will be assign with 2 and enter into the loop and in the loop 
+    there is condition s[ip] means it will extract 'n' is alpha and so 'n' is not present in v variable
+     then enter into if block print the index position ip.
+-- in the 4th iteration the ip will be assign with 3 and enter into the loop and in the loop 
+    there is condition s[ip] means it will extract 'k' is alpha and so 'k' is not present in v variable
+     then enter into if block print the index position ip.
+-- in the 5th iteration the ip will be assign with 4 and enter into the loop and in the loop 
+    there is condition s[ip] means it will extract 'y' is alpha and so 'y' is not present in v variable
+     then enter into if block print the index position ip.
+
+
+   

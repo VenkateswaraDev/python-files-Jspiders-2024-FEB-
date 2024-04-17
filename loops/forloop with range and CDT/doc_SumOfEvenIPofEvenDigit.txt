@@ -1,0 +1,32 @@
+# find sum of even index positions of even digits present in the string
+
+1. Take input from the user and store it in the variable called s
+2. by assuming if the user given str does not contain any digits or does not have any even digits so sum is initilized with 0
+3.we need to add index positions so we need to consider for loop with the range and CDT
+4. for loop range will be in between 0 to length of s
+5. if s[ip].isdigit():
+        if int(s[ip]) % 2 == 0 and ip % 2 == 0:
+            sum += ip
+
+inside for loop we need condition to check any digit is present in the given str 
+if true then enter into if block then another if condtion to check that digit is even or not and ip is even or not.
+    if the digit is even and ip is even then enter into nested if block and sum will be added to sum = sum + ip
+6. assume s = 've456'
+
+ -- in the first iteration the ip will be assign with 0 and enter into the loop and in the loop 
+    there is condition s[ip] means it will extract 'v' and it is not digit so condition false, sum value will be 0.
+ -- in the 2nd iteration the ip will be assign with 1 and enter into the loop and in the loop 
+    there is condition s[ip] means it will extract 'e' and it  not is digit so condition false, sum will be 0. 
+ -- in the 3rd iteration the ip will be assign with 2 and enter into the loop and in the loop 
+    there is condition s[ip] means it will extract '4' and it is digit so condition true, 
+    nested condition 4 is  even and ip value 2 is even so condition true, sum will be 2.
+ -- in the 4th iteration the ip will be assign with 3 and enter into the loop and in the loop 
+    there is condition s[ip] means it will extract '5' and it is digit so condition true, 
+    nested condition 5 is not  even condition false, sum will be 2.
+ -- in the 5th iteration the ip will be assign with 4 and enter into the loop and in the loop 
+    there is condition s[ip] means it will extract '6' and it is digit so condition true, 
+    nested condition 6 is  even and ip value is 4 even condition true, sum will be 6.
+
+7. after complition of iterations the controller will come out of the loop, there we need to print the sum.
+
+
