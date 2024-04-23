@@ -1,0 +1,8 @@
+# swap the list elements with there adjusting index with out using slicing
+
+L = [11,20,12,45,67,89]
+
+1. initilizing i with 0 to starting position of the loop
+2.while condition i<len(L)-1 if condition satisfy then enter into loop and swap the values by using indexing
+3. increment i with 2
+4. after complition of loop print L.

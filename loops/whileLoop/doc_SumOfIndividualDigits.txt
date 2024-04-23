@@ -1,0 +1,18 @@
+1.Take a input from the user and store in n
+2. assume user given 0 so initilizing sum variable as 0
+3. starting a while loop with condition n != 0
+
+assume num = 123
+
+if while condition satisfy then 
+
+-- 1st iteration n%10 will extract last digit or rem in the given number 3 stored in d and sum value will become 3.
+    n will be updated to n//10, 12
+-- 2nd iteration n%10 will extract last digit or rem in the given number 2 stored in d and sum value will become 3+2.
+    n will be updated to n//10, 1
+-- 3rd iteration n%10 will extract last digit or rem in the given number 1 stored in d and sum value will become 5+1.
+    n will be updated to n//10, 0
+--4th iteration condition fail comes out of the loop
+
+4. outside the loop print sum.
+

@@ -1,0 +1,19 @@
+1. Take int input from the user and store it in the num variable
+2. Assume that user enter 0 as input so sum of 0 will 0, thats the region we are initilizing sum variable with 0
+3. we need an starting value to strat the loop so iam taking i = 1
+4. while condition will be i<=num, then i value will be comparied to that condition
+5.if condition true sum value will be add with i value
+6.we need to write loop stoping statement other wise it will be infinite loop
+7.i value will be incremented by 1 every time it enters into the loop.
+8. Assume user given input as 5
+
+- in the 1st iteration i will be 1 and (i<=num) condition true sum value will become 1 and i value will become 2
+- in the 2nd iteration i will be 2 and (i<=num) condition true sum value will become 3 and i value will become 3
+- in the 3rd iteration i will be 3 and (i<=num) condition true sum value will become 6 and i value will become 4
+- in the 4th iteration i will be 4 and (i<=num) condition true sum value will become 10 and i value will become 5
+- in the 5th iteration i will be 5 and (i<=num) condition true sum value will become 15 and i value will become 6
+- in the 6th iteration i will be 6 and (i<=num) condition false.
+
+exit loop
+
+9. outside the loop we need to print sum value.

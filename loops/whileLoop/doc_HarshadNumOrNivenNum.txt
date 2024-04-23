@@ -1,0 +1,20 @@
+1.Take a input from the user and store in n
+2. assume user given 0 so initilizing sum variable as 0
+3. initilizing i = n
+3. starting a while loop with condition i != 0
+
+assume num = 121
+
+if while condition satisfy then 
+
+-- 1st iteration i%10 will extract last digit or rem in the given number 1 stored in rem and sum = sum + rem value will become 1.
+    i will be updated to n//10, 12 
+ --2nd iteration i%10 will extract last digit or rem in the given number 2 stored in rem and sum = sum + rem value will become 3.
+    i will be updated to n//10, 1 
+--  3rd iteration i%10 will extract last digit or rem in the given number 1 stored in rem and sum = sum + rem value will become 4.
+    i will be updated to n//10, 0 
+--4th iteration condition fail comes out of the loop
+
+4. outside the loop check condition n % sum == 0 if condition true then print "Harshad number".
+5. else print('not a Harshad number')
+

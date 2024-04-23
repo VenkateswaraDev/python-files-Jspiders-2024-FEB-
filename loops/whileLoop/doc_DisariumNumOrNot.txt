@@ -1,0 +1,21 @@
+1.Take a input from the user and store in n
+2. assume user given 0 so initilizing sum variable as 0
+3. initilizing i = n
+3. starting a while loop with condition i != 0
+4. find length by using len function by typecasting number into str and store in l.
+
+assume num = 121
+
+if while condition satisfy then 
+
+-- 1st iteration i%10 will extract last digit or rem in the given number 1 stored in rem and sum = sum + rem**l value will become 1.
+    i will be updated to n//10, 12 and l value become (l-1) 2
+ --2nd iteration i%10 will extract last digit or rem in the given number 2 stored in rem and sum = sum + rem**l value will become 5.
+    i will be updated to n//10, 1 and l value become 1
+--  3rd iteration i%10 will extract last digit or rem in the given number 1 stored in rem and sum = sum + rem**l value will become 6.
+    i will be updated to n//10, 0 and l value become 0
+--4th iteration condition fail comes out of the loop
+
+4. outside the loop check condition sum == n if condition true then print "Disarium number".
+5. else print('not a Disarium number')
+
