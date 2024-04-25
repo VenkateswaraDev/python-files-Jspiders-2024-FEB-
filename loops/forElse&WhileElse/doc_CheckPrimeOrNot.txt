@@ -1,0 +1,12 @@
+1. Take number input from the user and store it in the n variable
+2. if n is grater than 1 then enter into if block, else enter into else block and print n is not a prime number.
+3. Assume user given n input as 7 
+4. if condition True and enter into loop
+5. we need to set up a loop to check factors of that number range will be start from 2 and upto n//2+1
+7//2, so 3+1 = 4
+
+-- in the 1st iteration i will be 2 and check if condition n%i means 7%2 condition false
+-- in the 2nd iteration i will be 3 and check if condition n%i means 7%3 condition false
+
+iteration range completed, so loop not terminated in middle so else block will be executed and print 7 is prime number.
+

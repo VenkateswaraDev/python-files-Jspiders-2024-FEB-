@@ -1,0 +1,16 @@
+1. Take 1st number from the user and store in a
+2. Take 2nd number from the user and store in b
+3. Take input from user how many numbers need to print and store in n
+4. Assume user given n input as 1 then print a
+5. Assume user given n input as 2 then print a,b
+    lets consider a = 1, b=3
+6. Assume user given more than two, lets take 4
+Then we need to print a,b and still need to find 2 numbers 
+3rd number will be found by adding a+b 
+7. start the for loop with the range of 3, n+1, here n will be 4
+
+-- in the 1st iteration i will become 3, c value will be sum of a+b , c value will be 4
+and print in the console next we need to shift the values a,b = b,c
+-- in the 2nd iteration i will become 4, c value will be sum of a+b , c value will be 7
+and print in the console next we need to shift the values a,b = b,c
+
