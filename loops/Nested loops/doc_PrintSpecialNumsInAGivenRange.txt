@@ -1,0 +1,63 @@
+# Print Special numbers in a given range 
+1. Take a lower limit number from the user and store in the ll.
+2. Take a upper limit number from the user and store in the ul.
+3. Here i need to extract the numbers in between the range so iam prefering forloop with the range of (ll,ul+1)
+4. if the number is graterthan 0 then enter into the if block 
+5. then num will be stored in i 
+6. sum will be initilized with the 0
+7. we need to extract the single elements from the num, so i preffer while loop with the condition of i>0
+8. then we need to extract last digit of the num by performing % 10 and stored in r variable
+9. here fact will be initilized with 1 to store the factores of the number
+10. again we need to find the factores of the extracted number, for that we need to take forloop
+with the range of (1,r+1)
+11.then fact = fact * j
+12. need to sum the factores
+13. write a statement to break the while loop condition i = i//10
+14. then finally compaire the num value with the sum if that is true then print num else skip.
+
+
+Assume ll = 145 and ul = 145
+-- in the 1st iteration of outer loop num value will become 145 and enter into the outer loop if num is graterthan 0 then enter into 
+if block, i will be initilized with the num and sum will be 0
+    -- enter into the inner while loop and check the condition i>o (i will be 145>0 ) true 
+        -- r will be initilized with i%10 (145%10 then it will give 5)
+        --fact will be initilized with 1
+        -- again entering into forloop with the range(1,r+1), here r is 5
+            --nested forloop to inner while loop 1st iteration fact = fact * j, here 1*2 = 2
+            --nested forloop to inner while loop 2nd iteration fact = fact * j, here 1*1 = 1
+            --nested forloop to inner while loop 3rd iteration fact = fact * j, here 2*3 = 6
+            --nested forloop to inner while loop 4th iteration fact = fact * j, here 6*4 = 24
+            --nested forloop to inner while loop 5th iteration fact = fact * j, here 24*5 = 120
+            --After complition of nested forloop controller will come to next statement
+        sum = sum + fact (here sum is 0 ) 0+120, so sum will become 120
+        i will become reduced based on (i= i//10) i value will be 14
+        -- again while condition will be checked i>0 true , so enter into the inner while loop
+
+         -- r will be initilized with i%10 (14%10 then it will give 4)
+        --fact will be initilized with 1
+        -- again entering into forloop with the range(1,r+1), here r is 4
+            --nested forloop to inner while loop 1st iteration fact = fact * j, here 1*2 = 2
+            --nested forloop to inner while loop 2nd iteration fact = fact * j, here 1*1 = 1
+            --nested forloop to inner while loop 3rd iteration fact = fact * j, here 2*3 = 6
+            --nested forloop to inner while loop 4th iteration fact = fact * j, here 6*4 = 24
+            --After complition of nested forloop controller will come to next statement
+        sum = sum + fact (here sum is 120 ) 120+24, so sum will become 144
+         i will become reduced based on (i= i//10) i value will be 1
+
+        -- again while condition will be checked i>0 true , so enter into the inner while loop
+        
+        -- r will be initilized with i%10 (1%10 then it will give 1)
+        --fact will be initilized with 1
+        -- again entering into forloop with the range(1,r+1), here r is 1
+            --nested forloop to inner while loop 1st iteration fact = fact * j, here 1*1 = 1
+             --After complition of nested forloop controller will come to next statement
+        sum = sum + fact (here sum is 144 ) 144+1, so sum will become 145
+         i will become reduced based on (i= i//10) i value will be 0
+
+         -- again while condition will be checked i>0 false.
+
+    so controller will come out of inner whileloop and move to next if condition num == sum
+    here num value is 145 and sum value will also will be 145, then if condition True, enter into if block, then print num.
+
+Then the controller will come out of outer for loop also.
+
