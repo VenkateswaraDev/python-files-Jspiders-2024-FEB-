@@ -1,0 +1,32 @@
+# Print perfect Numbers In A Given range
+
+1. Take lower limit number input from the user and store in the ll variable.
+2. Take Upper limit number input from the user and store in the ul variable.
+3. I need to extract every number in between the range of numbers, so i preffer to use forloop with the range of (ll,ul+1)
+4. sum variable will be initilized with 0 because if user given 0 as input to the ll and ul.
+5. i need to find divisors of extracted num so i preffer to use for loop with range of(1,num//2+1)
+6. if the num is divisible with the loop range then i need to increment the sum variable with sum + I
+7. After compilition of inner loop we need to check the num == sum if True then print that num.
+
+Assume user given ll as 5 and ul 6
+
+outer forloop with num variable and the range of(5,6+1)
+-- 1st iteration of outer loop, num variable will be 5, sum will be initilized with 0.
+    nested forloop with the range(1,5//2+1)
+    -- 1st iteration of inner loop, i will be initilized with 1, then check the if condition 5%1==0 true, sum will become 1
+    -- 2nd iteration of inner loop, i will be initilized with 2, then check the if condition 5%2==0 False, sum will be 1
+    -- 3rd iteration of inner loop, i will be initilized with 3, then check the if condition 5%3==0 False, sum will be 1
+    After complition of inner loop controller will move to out of innerloop and move to next statment
+Check the if condition num == sum, here num will be 5 and sum will be 1, so condition fail
+
+-- 2nd iteration of outer loop, num variable will be 6, sum will be initilized with 0.
+    nested forloop with the range(1,6//2+1)
+    -- 1st iteration of inner loop, i will be initilized with 1, then check the if condition 6%1==0 true, sum will become 1
+    -- 2nd iteration of inner loop, i will be initilized with 2, then check the if condition 6%2==0 True, sum will become 3
+    -- 3rd iteration of inner loop, i will be initilized with 3, then check the if condition 6%3==0 True, sum will become 6
+    -- 4th iteration of inner loop, i will be initilized with 4, then check the if condition 6%4==0 False, sum will be 6
+    After complition of inner loop controller will move to out of innerloop and move to next statment
+Check the if condition num == sum, here num will be 6 and sum will be 6, so condition True, then enter into if block print Num 6.
+
+outer loop iterations completed.
+

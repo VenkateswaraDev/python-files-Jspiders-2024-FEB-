@@ -1,0 +1,23 @@
+# Print prime Numbers In A Given range
+
+1. Take lower limit number input from the user and store in the ll variable.
+2. Take Upper limit number input from the user and store in the ul variable.
+3. I need to extract every number in between the range of numbers, so i preffer to use forloop with the range of (ll,ul+1)
+4. i need to check if the extracted num is divides with any other number in the inner loop with the range(2,num//2+1).
+6. if the num is divisible with the loop range then Break the loop, else print num 
+
+Assume user given ll as 2 and ul 3
+
+outer forloop with num variable and the range of(2,3+1)
+-- 1st iteration of outer loop, num variable will be 2, and check the if condition num>1 true enter into the loop.
+    nested forloop with the range(2,2//2+1)
+    controller will not enter into the loop, so for loop not break anywhere
+    so else block will be extracted, then print num 2
+
+
+-- 1st iteration of outer loop, num variable will be 3, and check the if condition num>1 true enter into the loop.
+    nested forloop with the range(2,3//2+1)
+    controller will not enter into the loop, so for loop not break anywhere
+    so else block will be extracted, then print num 3
+
+
