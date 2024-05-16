@@ -1,4 +1,4 @@
-from rangeOfPrimeNumbers import primeNumbers
+
 from isPrimeFunction import isPrime
 
 def sumOfPrime(n):
