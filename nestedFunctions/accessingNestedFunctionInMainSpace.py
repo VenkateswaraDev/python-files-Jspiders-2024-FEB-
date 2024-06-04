@@ -15,5 +15,5 @@ def greet():
     print('Greet function is ended')
     
     
-result = outer(greet)
-result()
+greet = outer(greet)
+greet()
